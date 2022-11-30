@@ -85,7 +85,7 @@ header h1 {
 }
 
 header .logo {
-    /*l'element header accompagné d'une classe définie par un breakpoint ".logo" : atrribution des regle =>
+    /*l'element header accompagné d'une classe définie par un dot ".logo" : atrribution des regle =>
     border-radius: arrondis les bord du logo a 50M
     box-shadow: ajoute des ombres que l'on déplace par px ...
     vertical-align: align le logo au millieu de la boite.*/
