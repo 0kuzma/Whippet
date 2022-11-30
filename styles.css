@@ -115,7 +115,10 @@ header .logo {
 /*MAIN*/
 
 #une {
-
+/* on passe sur un ID "#" ici qui represente la section id="une" 
+display: flex => flexbox méthode de mise en page qui permet de mettre en column / row les elements
+ici nous permet dans la section UNE d'aligner les deux container .text-left et .grid-img-right en mode row par default :
+et une mise en page centrée grace a flex et margin auto avec une largeur de 80% on rajoute margin-top 15rem pour faire de l'éspace entre le header et la section une */
     display: flex;
     width: 80%;
     margin: auto;
@@ -129,6 +132,8 @@ header .logo {
 }
 
 .center-h1 {
+    /*Text-align center ; permet de centrer le text.
+    margin-top a 98px avec un style impact couleur marron des ombre sous le text et une taille de 38px.*/
     margin-top: 98px;
     text-align: center;
     height: auto;
@@ -139,12 +144,16 @@ header .logo {
 }
 
 .text-left h1 {
+    /*la classe nous permet ici de pointer sur l'element h1 pour definir les regles de styles 
+    => mettre en gras le titre h1 taille du text 28px et un espace en bas de 18px*/
     margin-bottom: 18px;
     font-weight: bold;
     font-size: 28px;
 }
 
 .text-left h2 {
+    /*la classe nous permet ici de pointer sur l'element h2 pour definir les regles de styles 
+    => ici padding en haut et en bas , 0px droite et gauche styles qui sera télécharger plus haut et rajouter plus tard grace a @import et une taille de 28px et la couleur ...*/
     padding: 28px 0px;
     margin: auto;
     font-size: 28px;
@@ -162,6 +171,10 @@ header .logo {
 /*IMG-RIGHT-grid*/
 
 .grid-img-right {
+    /*Utilisation de flexbox
+    flex-wrap nous permet ici d'afficher les img sur la deuxieme ligne si c'était comme par default flex-nowrap les 6 image serait côte a côte sur une seul et même ligne...
+    justify-content: permet d'aligner au centre
+    object-fit: cover; va forcer l'img a maintenir sont ratio d'affichage et donc si l'img et la boite ne correspondent pas l'img sera rogné.*/
     margin-top: 58px;
     display: flex;
     flex-wrap: wrap;
@@ -171,6 +184,7 @@ header .logo {
 }
 
 .grid-img-right img {
+    /*Hauteur de l'img a 10rem , avec une largeur de 25% bordure de 2px solid noire, object-fit cover*/
     border: 2px solid black;
     width: 25%;
     height: 10rem;
@@ -206,6 +220,20 @@ header .logo {
 }
 
 form {
+    /*Nouveau element form qui nous permet de crée des formulaire pour que les utilisateurs répondent au question ...
+    
+    On définit ici la hauteur la largeur la couleur du fond la position : absolute grace a left on defini l'emplacement finale de l'element
+    z-index: 1; permet de faire passer en premier plan au dessus du bg-form.
+    
+    Nous rencontrerons par la suite <fieldset> <legend> <select> <label> && <input>
+    le <label> represente une legende pour l'utilisateur, sur le html ont retrouve l'attribut "for" du label qui sert de controle et relie l'id du input aux label : 
+    sans cela le label ne rederigera pas vers le input.
+
+    <input> permet a l'utilisateur de saisir des donnée
+    
+    <fieldset> : permet de cree des groupes different pour les diffferiencier on rajoute <legend> qui nous donne une legende pour son element parent qui est fieldset ici.
+    
+    <select><option> dans un element<select> on utilise l'element <option> qui permmettra a l'utilisateur de choisir ici : "choisisser une des quatre reponse"*/
     background-color: #161C1ada;
     width: 40%;
     position: absolute;
@@ -274,6 +302,7 @@ label {
 /*FOOTER*/
 
 footer {
+    /*footer element pour le bas de la page*/
     background-color: #161C1a;
     height: 10rem;
     width: 100%;
