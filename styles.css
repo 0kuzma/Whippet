@@ -57,6 +57,10 @@ body {
 
 
 header {
+    /*element header : regle de style =>
+    width: ici mit a 100ù pour que les element occupes la pages entière en largeur
+    height: ici mit a 35rem pour la taille de la boites header
+    background-color: de nouveau pour changer la couleur du fond par contre ici cela sera pour header ... */
     width: 100%;
     height: 35rem;
     background-color: #161C1a;
