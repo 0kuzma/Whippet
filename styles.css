@@ -67,7 +67,14 @@ header {
 }
 
 header h1 {
-
+    /*nous avons ici deux element HEAD && H1 
+    on va attribué c'est règle suivante au dexu élément
+    margin-left: permet de décaler l'exterieur de la boite h1 qui se trouve dans la boite header de 10% vers la gauche
+    padding-top: ici le padding nous permet d'agrandir l'interieur du haut de la boite
+    font-size: nous permet d'aggrandir le text a 38px
+    font-weight: permet de mettres le texte en gras
+    color: ici nous changeons la couleur du text
+    font-family: nous choissont le styles que le texte ddevra afficher sur le site une fois chargé*/
     margin-left: 10%;
     padding-top: 38px;
     font-size: 38px;
@@ -78,6 +85,10 @@ header h1 {
 }
 
 header .logo {
+    /*l'element header accompagné d'une classe définie par un breakpoint ".logo" : atrribution des regle =>
+    border-radius: arrondis les bord du logo a 50M
+    box-shadow: ajoute des ombres que l'on déplace par px ...
+    vertical-align: align le logo au millieu de la boite.*/
     width: 4%;
     margin-right: 30px;
     margin-left: 30px;
@@ -86,6 +97,11 @@ header .logo {
 }
 
 .img-right img {
+    /*element img avec la classe .img-right 
+    float: right; deplace l'image a droite de l'ecran
+    width: ici nous permet de definir la largeur et hauteur de l'image a 25%
+    object-fit: coontaint; permet d'adapter la boite en utilisant la largeur et la hauteur
+    box-shadow: ajoute des ombres que l'on deplace par px ...*/
     float: right;
     margin-right: 10%;
     width: 25%;
